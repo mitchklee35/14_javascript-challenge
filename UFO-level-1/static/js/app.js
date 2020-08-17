@@ -1,6 +1,6 @@
 // from data.js
 var tableData = data;
-// console.log(tableData);
+console.log(tableData);
 
 
 
@@ -29,31 +29,32 @@ tableData.forEach(function(ufoSighting) {
 // Create button and search for date in sightings
 var button = d3.select("#filter-btn");
 button.on("click", function() {
-
+    var tbody = d3.select("tbody")
     tbody.html("");
     // Prevent the page from refreshing
     d3.event.preventDefault();
     
     // Select the input element and get the raw HTML node
-    var inputElement = d3.select("#dateTime");
+    var inputElement = d3.select("#datetime");
   
     // Get the value property of the input element
     var inputValue = inputElement.property("value");
   
-    // console.log(inputValue);
-    // console.log(tableData);
+    console.log(inputValue);
+    console.log(tableData);
   
     var filteredData = tableData.filter(tableData => tableData.datetime === inputValue);
   
-    // console.log(filteredData);
-
+    console.log(filteredData);
     filteredData.forEach(function(selections) {
-        console.loag(selections);
+        console.log(selections);
         var row = tbody.append("tr");
         Object.entries(selections).forEach(function([key, value]) {
-            // console.log(key, value);
-            var cell = row.apend("td");
+            console.log(key, value);
+            var cell = row.append("td");
             cell.text(value);
         });
     });
   });
+
+  
