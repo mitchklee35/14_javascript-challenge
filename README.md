@@ -1,7 +1,22 @@
-# 14_javascript-challenge
+# UFO Siting Analysis
 
-Overview UFO-level-1
-    Filter the data from the given app.js. Organize the data into a table then pull that table into the HTML file to present in a filter. Table is presented in each column then serched through with given filter based on Date.
+Data Analysis and Visualization Course
+### Installation
 
-Overview UFO-level-2
-    Change that filter to accept more columns like city, state, country, etc..
+```bash
+none
+```
+
+### Function
+Take UFO ```data.js``` and translate it into a searchable function within a website. 
+
+### Organization
+UFO level 1 has the ```index.html``` file where you will see the webpage. Within the static folder is the css images, and JavaScript files to run the program. 
+
+### How to Run
+1. Open the ```index.html``` file. 
+2. Enter the desired date in which you would like to see the UFO sightings. 
+3. The program will populate the data from ```data.js``` 
+
+### Result
+![info](https://github.com/mitchklee35/14_javascript-challenge/blob/master/UFO-level-1/static/images/example.PNG)<br/>
