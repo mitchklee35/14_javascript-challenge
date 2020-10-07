@@ -1,4 +1,4 @@
-# UFO Siting Analysis
+# UFO Sighting Search Engine
 
 Data Analysis and Visualization Course
 ### Installation
